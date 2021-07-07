@@ -2,19 +2,24 @@ body {
   margin: 0;
 }
 header {
-  background-color: #373738;
-  padding: 15px;
+  background-color: white;
+  padding: 0px;
+  text-align: center
 }
 header ul {
-  float: right;
-  color: white;
+  color: black;
+  text-align: center;
 }
 header li {
   display: inline-block;
-  padding: 0px 5px;
+  padding: 0px 120px;
+  text-align: center;
+  color: black; } /* CSS link color (red) */
+  li:hover { color: burlywood; } /* CSS link hover (green) */
 }
 header p {
   display: inline-block;
+  background-color: #FFFBF9;
 }
 .heroImg {
   background-color: #EBEBEB;
@@ -26,6 +31,8 @@ header p {
   padding: 50px;
   background-color: #FFFFFF;
   text-align: center;
+  box-shadow: 10px 5px 5px blanchedalmond;
+  border-radius: 8px;
 }
 button {
   padding: 15px;
@@ -35,13 +42,14 @@ button {
   border-radius: 4px;
 }
 footer {
-  background-color: #373738;
+  background-color: #FFFBF9;
   padding: 5px;
-  color: white;
+  color: black;
 }
 footer ul {
   list-style: none;
   padding-left: 5px;
+  text-align: center
 }
 footer li {
   display: inline-block;
@@ -56,6 +64,7 @@ footer li {
 .flexContainer {
   display: flex;
   padding: 60px 30px;
+  text-align: center
 }
 .flexContainer div {
   width: 33%;
@@ -71,7 +80,7 @@ footer li {
 .workGrid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 350px 350px 350px;
+  grid-template-rows: 350px 550px 550px;
   grid-template-areas:
   "img1 content1"
   "img2 content2"

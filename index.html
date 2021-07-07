@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Homework 17 Solved</title>
+    <title>Portfolio</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img src="images/logo.png">
-      <ul>
+      <img>
+      <ul class="header-nav-item--active a">
         <li>ABOUT</li>
         <li>SKILLS</li>
         <li>WORK</li>
         <li>CONTACT</li>
-      </ul>
+        </ul>
     </header>
     <section class="heroImg">
       <div class="content">
-        <img src="images/placeholder_picture.png">
-        <h1>Lady Leggett</h1>
-        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua.</p>
-        <button id="resume">Download Resume</button>
+        <img src="images/lady.jpg" width="300" heigth="350" alt="Lady">
+        <h1 class="lady">Hola! I'm Lady</h1>
+        <p>UX Designer and Researcher Based in San Francisco.</p>
+        <form method="get" action="docs/Leggett, Lady-Resume-R.pdf">
+          <button type="submit" id="resume">Download Resume</button>
+        </form>
       </div>
     </section>
-    <h1 class="heading">My UX Skills</h1>
+      <h1 class="heading">
+        <span class="text-wrapper">
+          <span class="letters">My UX Skills</span>
+        </span>
+      </h1>
     <section class="flexContainer">
       <div>
-        <img src="images/placeholderSkill.png">
+        <img src="images/research.jpg" width="400" heigth="350" alt="User Research">
         <h3>User Research</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat</p>
+        <p>I have conducted several user research studies. Some of the Usability testing, A/B testing, guerrilla testing, among others.</p>
       </div>
       <div>
-        <img src="images/placeholderSkill.png">
-        <h3>User Interface Design</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat</p>
+        <img src="images/empathy.jpg" width="400" heigth="550" alt="User Empathy">
+        <h3>User Empathy</h3>
+        <p>My background is in Psychology and mental health, therefore I have developed a profound understanding of the human nature.</p>
       </div>
       <div>
-        <img src="images/placeholderSkill.png">
-        <h3>Web Development</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat</p>
+        <img src="images/interviews.jpg" width="400" heigth="350" alt="User Interviews">
+        <h3>User Interviews</h3>
+        <p>I have experience conducting in-depth interviews, ethnographies, and focus groups.</p>
       </div>
     </section>
 
@@ -45,28 +51,28 @@
       <h1 class="heading">My Work</h1>
       <div class="workGrid">
         <div class="img1">
-          <img src="images/placeholder_picture.png">
+          <img src="images/cats.png" width="200" heigth="1150" alt="Stray Cat Alliance">
         </div>
         <div class="content1">
-          <h4>User Research</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <button>View Project</button>
+          <h4>Web redesign: Stray Cat Alliance</h4>
+          <p>I developed a new and improved website for Stray Cat Alliance to help future cat owners solve the problem of unappealing and challenging interfaces.</p>
+          <button id="cats">View Case Study</button>
         </div>
         <div class="img2">
-          <img src="images/placeholder_picture.png">
+          <img src="images/travel.png" width="500" heigth="650" alt="Traveler's Hub">
         </div>
         <div class="content2">
-          <h4 id="userResearch">User Research</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <button>View Project</button>
+          <h4>Traveler's Hub</h4>
+          <p>The COVID-19 vaccine is available and people are hopeful that they will soon be able to travel. I wanted to bring some happiness to their lives by creating Traveler’s Hub.</p>
+          <button id="travelers">View Case Study</button>
         </div>
         <div class="img3">
-          <img src="images/placeholder_picture.png">
+          <img src="images/treasury.png" width="auto" heigth="auto" alt="Dep. of The Treasury">
         </div>
         <div class="content3">
-          <h4>User Research</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <button>View Project</button>
+          <h4>Web redesign: Department of the Treasury</h4>
+          <p>I decided to redesign the Department of the Treasury's website because even though is pleasant and at first glance very well designed. It has several functionality issues.</p>
+          <button id="treasury">View Case Study</button>
         </div>
       </div>
     </section>
@@ -80,5 +86,7 @@
     </footer>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="js/index.js"></script>
 </html>
